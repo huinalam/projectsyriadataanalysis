@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>f8834e32-49b9-4127-91d9-a9659dc9a7d3</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>PythonDataAnalysis.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>PythonDataAnalysis</Name>
+    <RootNamespace>PythonDataAnalysis</RootNamespace>
+    <InterpreterId>
+    </InterpreterId>
+    <InterpreterVersion>
+    </InterpreterVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="PythonDataAnalysis.py" />
+    <Compile Include="SyriaTracker\00_DownoadCSV.py" />
+    <Compile Include="SyriaTracker\01_translate.py" />
+    <Compile Include="SyriaTracker\02_ExportGroups.py" />
+    <Compile Include="SyriaTracker\03_ExportEvents.py" />
+    <Compile Include="SyriaTracker\04_GetTwitter.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SyriaTracker\AnalysisCSV.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SyriaTracker\StaticPath.py" />
+    <Compile Include="SyriaTracker\__init__.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="2016-02-22-Killed-Reports.csv" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="SyriaTracker\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <PtvsTargetsFile>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets</PtvsTargetsFile>
+  </PropertyGroup>
+  <Import Condition="Exists($(PtvsTargetsFile))" Project="$(PtvsTargetsFile)" />
+  <Import Condition="!Exists($(PtvsTargetsFile))" Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>

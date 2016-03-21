@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "PythonDataAnalysis", "PythonDataAnalysis\PythonDataAnalysis.pyproj", "{F8834E32-49B9-4127-91D9-A9659DC9A7D3}"
+EndProject
+Project("{DA7A21FA-8162-4350-AD77-A8D1B671F3ED}") = "R_DataAnalysis", "R_DataAnalysis\R_DataAnalysis.rxproj", "{92D0D315-80D6-48DC-8876-3E95B65B7116}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F8834E32-49B9-4127-91D9-A9659DC9A7D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8834E32-49B9-4127-91D9-A9659DC9A7D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
